@@ -35,6 +35,14 @@
 
 /process/msc/StepLimit Minimal
 
+/gamos/setParam SD:VirtSegmBox:NDiv:Detector 256 256 1
+/gamos/setParam SD:VirtSegmBox:Width:Detector 0.055 0.055 1.0
+/gamos/SD/assocSD2LogVol GmSDVirtSegmBox Detector detector
+#/gamos/userAction GmHistosGammaAtSD
+/gamos/userAction GmHitsHistosUA
+/gamos/setParam SD:GmHitsWriteUA:BinFile FALSE
+/gamos/setParam hits.text:FileName hits.out
+/gamos/userAction GmHitsWriteUA
 
 /gamos/random/restoreSeeds 5000 22221
 
