@@ -99,7 +99,7 @@
 #/gamos/random/restoreSeeds 5000 22221
 
 # Permite obtener imagen 3D de la geometria con extension .wrl
-#/control/execute ../visVRML2FILE.in
+#/control/execute visVRML2FILE.in
 
 # Se "enciende" la fuente para que sean expulsados N igual 1000000 fotones (el maximo posible es de (2^31) -1 fotones)
 /run/beamOn 10
